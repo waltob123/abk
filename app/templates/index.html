@@ -1,0 +1,98 @@
+{% extends "./base.html" %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/auditions.css') }}">
+{% endblock %}
+
+{% block title %}ABK | Auditions{% endblock %}
+
+{% block content %}
+<section id="auditions-hero">
+    <div class="container">
+        <img src="{{ url_for('static', filename='images/abk_transparent_logo.png') }}" alt="ABK hero image">
+    </div>
+</section>
+<section id="auditions-form">
+    <div class="container-md">
+        <div class="form">
+            <form action="" method="" enctype=""></form>
+        </div>
+    </div>
+</section>
+<section id="about">
+    <div class="container-md">
+        <h2>About</h2>
+        <div class="faded-black-bg">
+            <p>
+                Welcome to the official site to audition for Accra's Boogie King..
+            </p>
+            <p>
+                We enjoy all styles of dance, whether you are an amazing ballet, or can do the old skool pop & lock. We
+                want to be
+                shocked and amazed by what you can do in 90 seconds!
+            </p>
+            <p>
+                So take a chance and show us your talent
+            </p>
+            <h4>Audition Online</h4>
+            <p>
+                It is now easier than ever to audition by sending us a video of your act.
+            </p>
+            <p>
+                You can upload a video, send us a link to your video on YouTube or use your webcam to directly record a
+                video on our
+                site!
+            </p>
+            <p>
+                Seriously it cannot get any more simple than that! You have no excuse. Submit a video audition for
+                Accra's Boogie King!
+            </p>
+            <section id="past-abks">
+                <h4>Watch Past Seasons of ABK</h4>
+                <div class="video-container">
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                        </iframe>
+                    </div>
+                    <div>
+                        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                        </iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+<section id="faq">
+    <div class="container-md">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faded-black-bg">
+            <div class="question">
+                <h4 class="open">
+                    Have you received the video I sent? When can I expect to receive feedback on it?
+                </h4>
+                <p class="answer open">
+                    Because of the high volume of submissions, we regret to inform you that we are unable to confirm
+                    receipt of
+                    individual
+                    videos submitted to the program. However, please be assured that each video received will be
+                    reviewed. If you are
+                    selected to participate in the program, a representative will contact you to arrange your appearance
+                    for the next
+                    round
+                    of the competition. Typically, this communication will occur approximately three days after the
+                    closing of
+                    auditions.
+                </p>
+            </div>
+            <div class="question">
+                <h4>Question 2</h4>
+            </div>
+            <div class="question">
+                <h4>Question 3</h4>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/resets.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
+    {% block styles %}{% endblock %}
+    <title>{% block title %}title_here{% endblock %}</title>
+</head>
+
+<body>
+    {% include "./header.html" %}
+    {% block content %}content_here{% endblock %}
+    {% include "./footer.html" %}
+</body>
+
+</html>

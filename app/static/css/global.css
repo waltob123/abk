@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(../images/spotlight_show.png);
+    background-color: #01010150;
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-md {
+    max-width: 800px;
+    margin: 0 auto;
+}
